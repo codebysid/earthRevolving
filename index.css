@@ -1,0 +1,97 @@
+body {
+  background-color: #171717;
+}
+
+.container {
+  height: 100vh;
+}
+
+.circle {
+  /* border: 1px solid white; */
+  height: 500px;
+  width: 500px;
+  border-radius: 20vw;
+  position: relative;
+  top: 15%;
+  left: 30%;
+  display: flex;
+  box-shadow: inset 4px 4px 100px #fff35f,
+  4px 4px 60px #fff35f;
+  animation: color 1s infinite alternate;
+}
+@keyframes color{
+    from{
+        box-shadow: inset 4px 4px 100px #fff35f,
+  4px 4px 60px #fff35f;
+    }
+    to{
+box-shadow: inset 4px 4px 100px #171717,
+  4px 4px 60px #171717;
+    }
+}
+#earth svg {
+  height: 8vw;
+  width: 8vw;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  animation: round 6s infinite linear;
+}
+
+@keyframes round {
+  from {
+    transform: rotate(0deg) translate(-250px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translate(-250px) rotate(-360deg);
+  }
+}
+
+#sun svg {
+  height: 15vw;
+  width: 15vw;
+  position: absolute;
+  top: 25%;
+  left: 28%;
+}
+#rotateSun svg{
+    height: 15vw;
+    width: 15vw;
+    position: absolute;
+    top: 25%;
+    left:28%;
+    animation: rotate 4s infinite linear;
+    
+}
+
+@keyframes rotate{
+    0%{
+        transform: translate(1px) rotate(0deg);
+    }
+    100%{
+        transform:  translate(1px) rotate(-360deg);
+    }
+}
+
+.cls-1 {
+  fill: #ff927d;
+}
+
+.cls-2 {
+  fill: #fff35f;
+  stroke: #54596e;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+
+.cls-3,
+.cls-4 {
+  fill: #54596e;
+  r:3;
+}
+
+.cls-3 {
+  opacity: 0.15;
+}
