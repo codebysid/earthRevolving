@@ -1,5 +1,7 @@
 body {
-  background-color: #171717;
+  background:url('./stars.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -21,11 +23,11 @@ body {
 }
 @keyframes color{
     from{
-        box-shadow: inset 4px 4px 100px #fff35f,
-  4px 4px 60px #fff35f;
+        box-shadow: inset 4px 4px 50px white,
+  4px 4px 60px white;
     }
     to{
-box-shadow: inset 4px 4px 100px #171717,
+box-shadow: inset 4px 4px 50px #171717,
   4px 4px 60px #171717;
     }
 }
